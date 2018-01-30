@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<classpath>
+	<classpathentry kind="src" output="native/out" path="ma/src"/>
+	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER"/>
+	<classpathentry kind="con" path="com.yonyou.uap.mobile.library.container/IUAP3_Public_Library"/>
+	<classpathentry kind="output" path="native/out"/>
+</classpath>

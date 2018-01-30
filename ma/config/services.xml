@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<gateway>
+	
+	<service id="getDeviceStatusService" provider="http" method="post"
+		returntype="String">
+		<properties>
+		</properties>
+		<ds-set>
+			<datasource name="NC65" />
+		</ds-set>
+	</service>
+	
+</gateway>
