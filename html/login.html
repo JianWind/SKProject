@@ -59,12 +59,12 @@
 						<p class="title tc mb30 fb f24">JianWind</p> 
 						<p class="user f14">用户名</p>	             		 
                              <div class="pr">
-                             	<input type="text" class="form-control um-no-brs" placeholder=" ">
+                             	<input type="text" class="form-control um-no-brs" placeholder="请输入用户名" id="uname">
                              	<span class="um-input-clear ti-close um-circle  f12"></span>
                              </div>				                        
 		                 <p class="user f14 mt10">密码</p>
 		                 <div class="pr">
-		                 	<input type="password" class="form-control um-no-brs" placeholder="">
+		                 	<input type="password" class="form-control um-no-brs" placeholder="请输入密码" id="pword">
 		             		<span class="um-input-clear ti-eye um-circle  f12 "></span>
 		                 </div>		             	
 	                    <button class="um-btn mt30">登  录</button>
@@ -72,17 +72,5 @@
 				</div>				 
 			 </div>		 
 		</div>
-		 <script>
-        	$(function(){
-        		$(".um-input-clear.ti-close").click(function() {
-        		    $(this).prev("input").val("");
-        		})
-        		$(".um-input-clear.ti-eye").click(function() {
-        		   var $pre_input=$(this).prev("input");
-        		    ('password'==$pre_input.attr('type'))?$pre_input.attr('type','text'):$pre_input.attr('type','password');
-        		    $(this).toggleClass('eye');  		    
-        		})
-        	})
-        </script>
 	</body>
 </html>

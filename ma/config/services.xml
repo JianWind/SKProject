@@ -1,13 +1,28 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <gateway>
 	
-	<service id="getDeviceStatusService" provider="http" method="post"
-		returntype="String">
-		<properties>
-		</properties>
-		<ds-set>
-			<datasource name="NC65" />
-		</ds-set>
-	</service>
-	
+	<!--获取 NC 数据的服务; -->
+<!--   <service id="query" provider="nclocator" method="queryAllGroupManagerFuncode"
+      returntype="java.util.String">
+      <properties>
+          <params></params>
+          <interface>nc.itf.mobile.MobileSupport</interface>
+          <security>false</security>
+      </properties>
+      <ds-set>
+          <datasource name="nc633" />
+      </ds-set>
+  </service> -->
+  <!--NC 登录服务; -->
+  <service id="ncLoginService" provider="nclocator" method="umLogin"
+      returntype="uap.vo.umobile.UMResult">
+      <properties>
+          <params>context:uap.vo.umobile.UMContext</params>
+          <interface>uap.itf.umoblie.IUapMoblieServ</interface>
+          <security>false</security>
+      </properties>
+      <ds-set>
+          <datasource name="NC65" />
+      </ds-set>
+  </service>
 </gateway>

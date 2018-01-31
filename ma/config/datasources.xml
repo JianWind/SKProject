@@ -3,7 +3,7 @@
 
 	<datasource id="NC65">
 		<!-- 指定服务器的地址 -->
-		<url>{modules/mobrt/config/config.properties:mdm_login_url}/push/devicestatus</url>
+		<url>http://10.176.120.151:8080</url>
 		<!-- 需要手动添加，必须和NC端配置伟岸的datasource相同-->
 		<ncds>design</ncds>
 	</datasource>	
